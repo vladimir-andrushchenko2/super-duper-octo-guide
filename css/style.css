@@ -159,11 +159,10 @@ li {
   margin: 0 0 20px;
 }
 
-.list__element {
+.list__element a {
   color: #3f2aff;
   border-bottom: 1px solid #3f2aff;
   font-size: 20px;
-  max-width: max-content;
 }
 
 .list__element::marker {
