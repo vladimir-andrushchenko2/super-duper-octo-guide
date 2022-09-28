@@ -5,17 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Modules</title>
 </head>
 
 <body>
     <header class="modules-header">
-        <a class="logo-wrapper" target="_blank" rel="noopener" href="https://skillbox.ru/">
+        <a class="logo-dark" target="_blank" rel="noopener" href="https://skillbox.ru/">
             <img src="img/logo-dark.svg" alt="логотип Skillbox">
         </a>
         <a href="index.html" class="link-back">На главную</a>
     </header>
+    <main class="modules-main">
+        <h1 class="modules-main-header">Модули курса Веб-верстка</h1>
+        <ol class="modules">
+            <li class="modules-item modules-item__type_intro">
+                <h2 class="module-header">Введение</h2>
+                <ol class="module-topics">
+                    <li class="module-topic">Как работают сайты. Верстка</li>
+                    <li class="module-topic">Возможности HTML, CSS, JS</li>
+                    <li class="module-topic">Редактор кода. Codepen</li>
+                    <li class="module-topic">Работа с DevTools</li>
+                </ol>
+            </li>
+            <li class="modules-item modules-item__type_html">
+                <h2 class="module-header">Базовый HTML</h2>
+                <ol class="module-topics">
+                    <li class="module-topic">Базовые теги</li>
+                    <li class="module-topic">Теги картинок и ссылок</li>
+                    <li class="module-topic">Теги таблиц</li>
+                    <li class="module-topic">Служебные теги</li>
+                    <li class="module-topic">Кодстайл HTML</li>
+                </ol>
+            </li>
+            <li class="modules-item modules-item__type_css">
+                <h2 class="module-header">Базовый CSS</h2>
+                <ol class="module-topics">
+                    <li class="module-topic">Подключение CSS</li>
+                    <li class="module-topic">Вес селектора</li>
+                    <li class="module-topic">Свойство display</li>
+                    <li class="module-topic">Блочная модель и позиционирование</li>
+                    <li class="module-topic">Кодстайл CSS</li>
+                </ol>
+            </li>
+            <li class="modules-item modules-item__type_layout">
+                <h2 class="module-header">Работа с макетом</h2>
+                <ol class="module-topics">
+                    <li class="module-topic">Про форматы изображений</li>
+                    <li class="module-topic">Работа с макетом в Photoshop</li>
+                    <li class="module-topic">Работа с макетом в Figma</li>
+                </ol>
+            </li>
+        </ol>
+        <button class="show-more-button" type="button">Показать ещё</button>
+    </main>
 </body>
 
 </html>

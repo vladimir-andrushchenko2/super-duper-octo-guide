@@ -187,3 +187,120 @@ li {
   padding: 19px 0;
   text-align: center;
 }
+
+.modules-header {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+  padding-top: 50px;
+  margin: 0 auto 25px;
+}
+
+.logo-dark {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.link-back {
+  color: #3f2aff;
+  background-image: url(../img/arrow-back.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 57px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.modules-main {
+  width: 1170px;
+  margin: auto;
+}
+
+.modules-main-header {
+  margin: 0 0 50px;
+  color: #3f2aff;
+  font-size: 60px;
+  line-height: 69px;
+  font-weight: 700;
+}
+
+.modules {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  gap: 25px;
+  counter-reset: module-counter;
+  margin: 0 0 50px;
+}
+
+.modules-item {
+  width: 572px;
+  height: 505px;
+  padding-top: 205px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  background-position: top center;
+  background-repeat: no-repeat;
+  counter-increment: module-counter;
+  position: relative;
+}
+
+.modules-item:before {
+  content: counter(module-counter, decimal-leading-zero);
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #eaeaea;
+}
+
+.modules-item__type_intro {
+  background-image: url(../img/introduction-module.jpg);
+}
+
+.modules-item__type_html {
+  background-image: url(../img/basic-html-module.jpg);
+}
+
+.modules-item__type_css {
+  background-image: url(../img/basic-css-module.jpg);
+}
+
+.modules-item__type_layout {
+  background-image: url(../img/layout-module.jpg);
+}
+
+.module-header {
+  padding-left: 25px;
+  margin-bottom: 2px;
+  color: #3f2aff;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.module-topics {
+  list-style: none;
+  padding-left: 25px;
+}
+
+.module-topic {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 165%;
+  color: #333;
+}
+
+.show-more-button {
+  margin: 0 auto 50px;
+  width: 274px;
+  height: 70px;
+  border: 2px solid #3f2aff;
+  color: #3f2aff;
+  display: block;
+  background-color: inherit;
+}
